@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .title1{
+            background-color: mediumslateblue;
+            border-style: solid;
+            border-color: #b9ff76;
+            font-size: 4em;
+            text-align: center;border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<?php include ('upstyle.php');
+utype(1);?>
+<?php echo "123";  ?>
+
+<!--start nav-->
+<!--<nav class="navbar navbar-inverse navbar-fixed-top">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <!--要增加按鈕這邊也要增加button-->-->
+<!--                <!--<span class="icon-bar"></span>-->-->
+<!--            </button>-->
+<!---->
+<!--            <!--這邊改左上角大標題-->-->
+<!--            <a class="navbar-brand" href="index.html">大爆肝</a>-->
+<!---->
+<!--        </div>-->
+<!--        <div id="navbar" class="collapse navbar-collapse">-->
+<!--            <ul class="nav navbar-nav">-->
+<!--                <li class="active"><a href="index.php">主頁</a></li>-->
+<!--                <li><a href="note.html">測試頁</a></li>-->
+<!--                <li><a href="contect.html">Contact</a></li>-->
+<!--                <!--自己新增的 fortest-->-->
+<!--                <!--<li><a href="contect.html">fortest</a></li>-->-->
+<!--                <li class="dropdown">-->
+<!--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">作品紀錄 <span class="caret"></span></a>-->
+<!--                    <ul class="dropdown-menu" role="menu">-->
+<!--                        <!--<li><a href="#">Action</a></li>-->-->
+<!--                        <!--<li><a href="#">Another action</a></li>-->-->
+<!--                        <!--<li><a href="#">Something else here</a></li>-->-->
+<!--                        <li class="divider"></li>-->
+<!--                        <li class="dropdown-header">第一周</li>-->
+<!--                        <li><a href="Test1/20170703index.html">20170703index</a></li>-->
+<!--                        <li><a href="Test1/test1.html">test1</a></li>-->
+<!--                        <li><a href="Test1/test2.html">test2</a></li>-->
+<!--                        <li><a href="web1/color.html">color</a></li>-->
+<!--                        <li><a href="web1/font.html">font</a></li>-->
+<!--                        <li><a href="web1/web2.html">web2</a></li>-->
+<!--                        <li><a href="phpstorm/teacher.html">teacher's</a></li>-->
+<!--                        <li class="divider"></li>-->
+<!--                        <li class="dropdown-header">第二周</li>-->
+<!--                        <li><a href="pt20170711/login.html">login</a></li>-->
+<!--                        <li><a href="forArray.php">forArray</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div><!--/.nav-collapse -->-->
+<!---->
+<!--    </div>-->
+<!--</nav>-->
+<!--<!--end nav-->-->
+
+<div style=" margin: 50px auto auto auto;width: 55% ;background-color: #ffc20b">
+    <p  class="title1">資工系</p>
+    <div style="padding: 0% 20%">
+        <img style="float: left;margin-top:20px" src="images/下載.jpg">
+
+
+    </div>
+
+    <div style="clear: both"></div>
+    <div align="center"><footer>power</footer></div>
+</div>
+
+</body>
+</html>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: USER
+ * Date: 2017/7/13
+ * Time: 上午 10:52
+ */
