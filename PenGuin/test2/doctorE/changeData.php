@@ -15,8 +15,13 @@ if($_SESSION['username'] != null) {
 //    $query = "SELECT * FROM member_table where username='$id'";
 //    $result =$mysqli->query($query);
 //    $row=$result->fetch_row();
-
+    $id=$_SESSION['username'];
     if(isset($_SESSION['username'])){
+        include ('dbconnect.php');
+        $query="SELECT *FROM `user` WHERE `account`='$id'";
+        if($result=$mysqli->query($query)){
+            $row=mysqli_fetch_row($result);
+        }
     }else{
         echo '<script> alert("您尚無登入或尚無權限查看此頁面")</script>';
         echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
@@ -48,13 +53,13 @@ if($_SESSION['username'] != null) {
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">帳號</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText3" placeholder="Account"name="account">
+                    <input type="text" class="form-control" id="inputText3" name="account"value=<?php echo "$row[2]"; ?> >
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email"name="mail">
+                    <input type="email" class="form-control" id="inputEmail3" name="mail"value=<?php echo "$row[5]"; ?> >
                 </div>
             </div>
             <div class="form-group row">
@@ -72,13 +77,13 @@ if($_SESSION['username'] != null) {
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">手機</label>
                 <div class="col-sm-10">
-                    <input type="tel" class="form-control" id="inputTel3" placeholder="Phone Number"name="phone">
+                    <input type="tel" class="form-control" id="inputTel3" name="phone"value=<?php echo "$row[4]"; ?>>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Line</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText3" placeholder="Line"name="line">
+                    <input type="text" class="form-control" id="inputText3" name="line"value=<?php echo "$row[6]"; ?>>
                 </div>
             </div>
             <div class="form-group row">
